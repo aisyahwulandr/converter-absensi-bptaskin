@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import io
 
+import streamlit as st
+
+st.set_page_config(
+    page_title="Converter Format Absensi",
+    layout="centered",  # atau wide
+    initial_sidebar_state="collapsed"
+)
+
 st.title("Converter Format Absensi")
 
 uploaded_file = st.file_uploader("Upload file base.xls / base.xlsx", type=["xls", "xlsx"])
